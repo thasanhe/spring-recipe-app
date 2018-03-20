@@ -18,6 +18,7 @@ public class Recipe {
     private String directions;
     //todo
     //private Difficulty difficulty
+    @Lob
     private Byte[] image;
 
     @OneToOne(cascade = CascadeType.ALL)
