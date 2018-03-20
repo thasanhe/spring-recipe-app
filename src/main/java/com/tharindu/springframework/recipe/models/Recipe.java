@@ -1,5 +1,8 @@
 package com.tharindu.springframework.recipe.models;
 
+import javax.persistence.CascadeType;
+import javax.persistence.OneToOne;
+
 public class Recipe {
 
     private String description;
@@ -12,6 +15,8 @@ public class Recipe {
     //todo
     //private Difficulty difficulty
     private Byte[] image;
+
+    @OneToOne(cascade = CascadeType.ALL)
     private Notes notes;
 
     public String getDescription() {
