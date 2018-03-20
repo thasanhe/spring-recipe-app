@@ -12,6 +12,7 @@ public class Recipe {
     //todo
     //private Difficulty difficulty
     private Byte[] image;
+    private Notes notes;
 
     public String getDescription() {
         return description;
@@ -75,5 +76,13 @@ public class Recipe {
 
     public void setImage(Byte[] image) {
         this.image = image;
+    }
+
+    public Notes getNotes() {
+        return notes;
+    }
+
+    public void setNotes(Notes notes) {
+        this.notes = notes;
     }
 }
