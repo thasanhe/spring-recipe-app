@@ -1,9 +1,6 @@
 package com.tharindu.springframework.recipe.models;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.math.BigDecimal;
 
 @Entity
@@ -17,6 +14,7 @@ public class Ingredient {
     //todo
     // private UnitOfMeasure uom;
 
+    @ManyToOne
     private Recipe recipe;
 
     public Long getId() {
